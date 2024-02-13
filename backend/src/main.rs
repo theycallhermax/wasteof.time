@@ -11,7 +11,36 @@ fn index() -> Value {
     })
 }
 
+#[get("/users/<username>")]
+fn users(username: &str) -> Value {
+    json!({
+        "name": username,
+        "id": "",
+        "bio": "",
+        "verified": false,
+        "permissions": {
+            "admin": false,
+            "banned": false
+        },
+        "beta": false,
+        "color": "",
+        "links": [],
+        "history": {
+            "joined": 0
+        },
+        "stats": {
+            "followers": 0,
+            "following": 0,
+            "posts": 0
+        },
+        "online": false
+    })
+}
+
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+    rocket::build().mount("/", routes![
+        index,
+        users
+    ])
 }
