@@ -8,10 +8,29 @@
 }
 
 
-* {
-    margin: 0;
-}
+* { margin: 0; }
 
 body {
     height: 100vh;
 }
+
+.header {
+    background-color: coral;
+    padding: 1rem 5rem;
+    color: white;
+}
+
+.span { display: inline-block; }
+
+.end {
+    float: right;
+    text-align: right;
+}
+
+.container { margin: 1rem; }
+
+.highlight { color: coral; }
+
+.top { margin-top: 1rem; }
+
+// .sides { padding-right: 0.5rem; }
