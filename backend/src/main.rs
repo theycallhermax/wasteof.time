@@ -1,17 +1,23 @@
-use std::env;
+// i am aware that most of this file is commented
+// this proves that i have no idea what i'm doing
+//
+// use std::env;
+// use std::error::Error;
 #[macro_use] extern crate rocket;
-use mongodb::{
-    bson::doc,
-    sync::{Client, Collection}
-};
+// use mongodb::{
+//     bson::doc,
+//     Client,
+//     Collection
+// };
 // unused... for now, we will need this in the future
 // use serde::{ Deserialize, Serialize };
 use rocket::serde::json::{Value, json};
 
-dotenvy::dotenv()?;
+// dotenvy::dotenv();
+// println!("{:#?}", env::var("WOT_MONGODB"));
 
 // todo: use this for once
-// const client = Client::with_uri_str("")?;
+// const client = Client::with_uri_str(env::var("WOT_MONGODB"))?;
 
 #[get("/")]
 fn index() -> Value {
