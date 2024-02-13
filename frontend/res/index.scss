@@ -1,0 +1,17 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}

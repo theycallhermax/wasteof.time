@@ -2,7 +2,7 @@
 
 use rocket::serde::json::{Value, json};
 
-#[get("/")]
+#[get("/", format = "json")]
 fn index() -> Value {
     json!({
         "ok": "ok",
@@ -11,7 +11,7 @@ fn index() -> Value {
     })
 }
 
-#[get("/users/<username>")]
+#[get("/users/<username>", format = "json")]
 fn users(username: &str) -> Value {
     json!({
         "name": username,
@@ -39,7 +39,7 @@ fn users(username: &str) -> Value {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![
+    rocket::build().mount("/api/", routes![
         index,
         users
     ])
