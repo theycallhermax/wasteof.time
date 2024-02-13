@@ -1,6 +1,17 @@
+use std::env;
 #[macro_use] extern crate rocket;
-
+use mongodb::{
+    bson::doc,
+    sync::{Client, Collection}
+};
+// unused... for now, we will need this in the future
+// use serde::{ Deserialize, Serialize };
 use rocket::serde::json::{Value, json};
+
+dotenvy::dotenv()?;
+
+// todo: use this for once
+// const client = Client::with_uri_str("")?;
 
 #[get("/")]
 fn index() -> Value {
