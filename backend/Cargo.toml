@@ -8,3 +8,4 @@ dotenvy = "0.15.7"
 mongodb = "2.8.1"
 rocket = { version = "0.5.0", features = ["json"] }
 serde = "1.0.196"
+shared = { path = "../shared" }
