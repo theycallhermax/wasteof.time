@@ -2,5 +2,6 @@
 resolver = "2"
 members = [
     "backend",
-    "frontend"
-, "shared"]
+    "frontend",
+    "shared"
+]
