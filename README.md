@@ -14,7 +14,7 @@ trunk watch
 ```
 
 ## Systemd Services
-## Backend
+### Backend
 ```systemd
 [Unit]
 Description=wasteof.time Backend
@@ -27,7 +27,7 @@ ExecStart=cd wasteof.time; cargo run -q -p backend
 [Install]
 WantedBy=default.target
 ```
-## Frontend
+### Frontend
 ```systemd
 [Unit]
 Description=wasteof.time Frontend
