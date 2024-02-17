@@ -1,20 +1,13 @@
-// use std::env;
-// use std::error::Error;
 #[macro_use] extern crate rocket;
-use mongodb::{
-    bson::doc,
-    sync::{Client, Collection}
-};
-// unused... for now, we will need this in the future
-// use serde::{ Deserialize, Serialize };
 use rocket::serde::json::{Value, json};
+use mongodb::{
+    bson::{doc, Document},
+    error::Error,
+    Client,
+    Collection,
+    Database,
+};
 use shared::{Colours};
-
-// dotenvy::dotenv();
-// println!("{:#?}", env::var("WOT_MONGODB"));
-
-// todo: use this for once
-// const client = Client::with_uri_str(env::var("WOT_MONGODB"))?;
 
 #[get("/")]
 fn index() -> Value {
