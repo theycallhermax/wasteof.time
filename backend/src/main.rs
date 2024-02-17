@@ -45,7 +45,7 @@ fn users(username: &str) -> Value {
 }
 
 #[get("/users/<username>/wall")]
-fn users(username: &str) -> Value {
+fn wall(username: &str) -> Value {
     json!({
         "comments": [
             "_id": "",
@@ -71,6 +71,7 @@ fn users(username: &str) -> Value {
 fn rocket() -> _ {
     rocket::build().mount("/", routes![
         index,
-        users
+        users,
+        wall
     ])
 }
