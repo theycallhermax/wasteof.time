@@ -44,6 +44,29 @@ fn users(username: &str) -> Value {
     })
 }
 
+#[get("/users/<username>/wall")]
+fn users(username: &str) -> Value {
+    json!({
+        "comments": [
+            "_id": "",
+            "wall": {
+                "name": username,
+                "id": ""
+            },
+            "poster": {
+                "name": "",
+                "id": "",
+                "color": "",
+            },
+            "parent": None,
+            "content": "",
+            "time": 0,
+            "hasReplies": false,
+        ],
+        "last": true
+    })
+}
+
 #[launch]
 fn rocket() -> _ {
     rocket::build().mount("/", routes![
