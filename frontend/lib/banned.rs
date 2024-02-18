@@ -21,7 +21,7 @@ pub fn Banned() -> Html {
 
                     <br />
 
-                    <small>{ "If this ban reason seems incorrect or invalid, please notify us immediately" }</small>
+                    <small>{ "If this ban reason seems incorrect or invalid, please notify us immediately." }</small>
                 </div>
             }
 
