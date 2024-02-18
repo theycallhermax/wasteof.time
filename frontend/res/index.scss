@@ -28,8 +28,17 @@ body {
 }
 
 .container { margin: 1rem; }
+.container.border {
+    border: 5px solid coral;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.container.border.dashed {
+    border: 5px dashed coral;
+}
 
 .highlight { color: coral; }
+.highlight.red { color: lightcoral; }
 
 .top { margin-top: 1rem; }
 
@@ -38,4 +47,17 @@ body {
 a.a, a.a:visited {
     color: white;
     text-decoration: none;
+}
+
+button {
+    background-color: coral;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: white;
+    border-width: 0;
+}
+
+button:hover {
+    background-color: rgb(245, 123, 78);
 }

@@ -1,6 +1,11 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+// components
+#[path = "../lib/banned.rs"] mod banned;
+use banned::Banned;
+
+// pages
 #[path = "home.rs"] mod home;
 use home::Home;
 #[path = "about.rs"] mod about;
