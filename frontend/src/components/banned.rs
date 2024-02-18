@@ -25,7 +25,7 @@ pub fn Banned() -> Html {
                 </div>
             }
 
-            <button>{ "Log out" }</button>
+            <button class="medium">{ "Log out" }</button>
         </div>
     }
 }
