@@ -14,7 +14,7 @@ pub fn User(props: &Props) -> Html {
             <div class="container">
                 <h1>{ "@" }{ username }</h1>
                 <p>{ "i use wasteof.time btw" }</p>
-                <button>{ "Wall" }</button>
+                <button class="medium top">{ "Wall" }</button>
 
                 <br />
 

@@ -41,6 +41,7 @@ body {
 .highlight.red { color: lightcoral; }
 
 .top { margin-top: 1rem; }
+button.top { margin-top: 0.5rem; }
 
 // .sides { padding-right: 0.5rem; }
 
@@ -64,4 +65,8 @@ button:hover {
 
 button.big {
     font-size: large;
+}
+
+button.medium {
+    font-size: medium;
 }
