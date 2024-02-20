@@ -1,10 +1,13 @@
 /// An enum declaring the possible colours
-pub enum Colours {
+enum Colours {
     Blue,
-    Fuchisa,
+    Fuchsia,
+    Gray,
     Green,
     Indigo,
+    Orange,
+    Pink,
+    Red,
     Teal,
-    Violet,
     Yellow
 }
