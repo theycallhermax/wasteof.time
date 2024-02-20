@@ -1,5 +1,5 @@
 /// An enum declaring the possible colours
-enum Colours {
+pub enum Colours {
     Blue,
     Fuchsia,
     Gray,
