@@ -48,22 +48,24 @@ fn users(username: &str) -> Value {
 fn wall(username: &str) -> Value {
     json!({
         "comments": [
-            "_id": "",
-            "wall": {
-                "name": username,
-                "id": ""
-            },
-            "poster": {
-                "name": "",
-                "id": "",
-                "color": "",
-            },
-            "parent": None,
-            "content": "",
-            "time": 0,
-            "hasReplies": false,
-        ],
-        "last": true
+            {
+                "_id": "",
+                "wall": {
+                    "name": username,
+                    "id": ""
+                },
+                "poster": {
+                    "name": "",
+                    "id": "",
+                    "color": "",
+                },
+                "parent": None,
+                "content": "",
+                "time": 0,
+                "hasReplies": false,
+            ],
+            "last": true
+        }
     })
 }
 
