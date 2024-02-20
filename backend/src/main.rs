@@ -63,9 +63,9 @@ fn wall(username: &str) -> Value {
                 "content": "",
                 "time": 0,
                 "hasReplies": false,
-            ],
-            "last": true
-        }
+            }
+        ],
+        "last": true
     })
 }
 
