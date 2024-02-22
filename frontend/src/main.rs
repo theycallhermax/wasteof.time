@@ -1,21 +1,8 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-// components
-#[path = "components/banned.rs"] mod banned;
-use banned::Banned;
-
-// pages
-#[path = "pages/home.rs"] mod home;
-use home::Home;
-#[path = "pages/about.rs"] mod about;
-use about::About;
-#[path = "pages/user.rs"] mod user;
-use user::User;
-
-// error pages
-#[path = "pages/404.rs"] mod notfound;
-use notfound::NotFound;
+mod components;
+mod pages;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
@@ -37,11 +24,11 @@ enum Route {
 
 fn switch(route: Route) -> Html {
     match route {
-        Route::Home => html! { <Home /> },
-        Route::About => html! { <About /> },
-        Route::User { username } => html! { <User username={ username } /> },
+        Route::Home => html! { <pages::Home /> },
+        Route::About => html! { <pages::About /> },
+        Route::User { username } => html! { <pages::User username={ username } /> },
 
-        Route::NotFound => html! { <NotFound /> }
+        Route::NotFound => html! { <pages::errors::NotFound /> }
     }
 }
 
