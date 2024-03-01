@@ -7,7 +7,7 @@ An open-source wasteof.money frontend/backend implementation
 cargo run -q -p backend
 ```
 ### Frontend
-To run the frontend, you need `trunk`, and the WASM target added. See the [Yew tutorial](https://yew.rs/docs/tutorial) for more deatils.
+To run the frontend, you need `trunk`, and the WASM target added. See the [Yew tutorial](https://yew.rs/docs/tutorial) for more details.
 ```console
 cd frontend
 trunk watch
