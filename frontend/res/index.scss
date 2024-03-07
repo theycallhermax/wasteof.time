@@ -53,14 +53,19 @@ a.a, a.a:visited {
 button {
     background-color: coral;
     border-radius: 10px;
+    border: 0;
     padding: 0.5rem;
     font-weight: 700;
     color: white;
-    border-width: 0;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(245, 123, 78);
+}
+
+button.red:hover {
+    background-color: rgb(235, 115, 115);
 }
 
 button.big {
@@ -69,4 +74,12 @@ button.big {
 
 button.medium {
     font-size: medium;
+}
+
+button.red {
+    background-color: lightcoral;
+}
+
+button.m {
+    margin-left: 0.5rem;
 }

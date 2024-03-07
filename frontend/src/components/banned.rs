@@ -25,7 +25,8 @@ pub fn Banned() -> Html {
                 </div>
             }
 
-            <button class="medium">{ "Log out" }</button>
+            <button class="medium red">{ "Log out" }</button>
+            <button class="medium m">{ "Over the Horizon, but lower quality" }</button>
         </div>
     }
 }
