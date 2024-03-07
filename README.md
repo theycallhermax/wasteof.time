@@ -15,7 +15,7 @@ trunk watch
 
 ## Systemd Services
 ### Backend
-```toml
+```
 [Unit]
 Description=wasteof.time Backend
 
@@ -28,7 +28,7 @@ ExecStart=cd wasteof.time; cargo run -q -p backend
 WantedBy=default.target
 ```
 ### Frontend
-```toml
+```
 [Unit]
 Description=wasteof.time Frontend
 
